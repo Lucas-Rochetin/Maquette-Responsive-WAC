@@ -1,0 +1,455 @@
+@media screen and (min-width: 800px) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
+  
+
+header {
+    background-color: #ccffff;   /* couleur ciel*/
+    width: 100%;
+    height: 100%;
+}
+
+.entete {
+  background-color: #9a99ff;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "logo entete-titre"; 
+}
+.logo { 
+  grid-area: logo; 
+  display: flex;
+}
+.entete-titre {
+  background-color: #9a99ff;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "home book destination price alert contact"; 
+  grid-area: entete-titre; 
+}
+.home { 
+  grid-area: home; 
+  place-content: right;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding-left: 8%;
+}
+.book { 
+  grid-area: book; 
+  place-content: right;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.destination { 
+  grid-area: destination; 
+  place-content: right;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.price { 
+  grid-area: price; 
+  place-content: right;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.alert { 
+  grid-area: alert; 
+  place-content: right;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.contact { 
+  grid-area: contact; 
+  place-content: right;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.titre-footer {
+  font-family: "Arial";
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  align-items: center;
+  place-content: left;
+  color: black;
+  padding-left: 8%;
+  margin: auto;
+}
+
+
+.titre {
+  font-family: "Arial";
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  align-items: center;
+  place-content: left;
+  color: black;
+  margin: 8px;
+}
+
+._text {
+    font-family: "Arial";
+    font-size: 10px;
+    font-weight: normal;
+    text-align: left;
+    align-items: center;
+    place-content: left;
+    color: black;
+    margin: 8px;
+}
+
+.ligne-rouge {
+    opacity: 0.1;
+    width: 100%;
+    color: red;
+}
+
+.ligne-noire {
+    width: 100%;
+    color: black;
+}
+
+.ligne-grise {
+  opacity: 0.1;
+  width: 100%;
+  color: grey;
+}
+
+.title1 {
+    color: white;
+    place-content: center;
+    text-align: left;
+    align-items: left;
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background-color: #ccffff;
+}
+
+.flags {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "france bresil algerie";
+  }
+  
+  .france { 
+      grid-area: france; 
+      height: max-content;
+      padding: 0 10px;
+      border: solid 1px grey;
+      margin: 5px;
+    }
+  
+  .bresil { 
+      grid-area: bresil; 
+      height: max-content;
+      padding: 0 10px;
+      border: solid 1px grey;
+      margin: 5px;
+    }
+  
+  .algerie { 
+      grid-area: algerie; 
+      height: max-content;
+      padding: 0 10px;
+      border: solid 1px grey;
+      margin: 5px;
+    }
+  
+.flag-title {
+    font-family: "Arial";
+    font-size: 19px;
+    font-weight: bold;
+    text-align: left;
+    align-items: center;
+    place-content: left;
+    color: black;
+}
+
+.flag-text {
+    display: flex;
+    font-family: "Arial";
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    align-items: center;
+    place-content: left;
+    color: black;
+}
+
+.travel-info {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "fire tente paw"
+      "fire-text tente-text paw-text";
+  }
+  
+  .fire { 
+      grid-area: fire;
+      background-color: #9a99ff;
+      margin: 10px;
+    }
+  
+  .tente { 
+      grid-area: tente;
+      background-color: #9a99ff;
+      margin: 10px;
+     }
+  
+  .paw { 
+      grid-area: paw;
+      background-color: #9a99ff; 
+      margin: 10px;
+    }
+  
+  .fire-text { 
+      grid-area: fire-text; 
+      display: flex;
+      font-family: "Arial";
+      font-size: 15px;
+      font-weight: normal;
+      text-align: left;
+      align-items: center;
+      place-content: left;
+      color: grey;
+      margin: 8px;
+    }
+  
+  .tente-text { 
+      grid-area: tente-text; 
+      display: flex;
+      font-family: "Arial";
+      font-size: 15px;
+      font-weight: normal;
+      text-align: left;
+      align-items: center;
+      place-content: left;
+      color: grey;
+      margin: 8px;
+    }
+  
+  .paw-text { 
+      grid-area: paw-text;
+      display: flex;
+      font-family: "Arial";
+      font-size: 15px;
+      font-weight: normal;
+      text-align: left;
+      align-items: center;
+      place-content: left;
+      color: grey; 
+      margin: 8px;
+    }
+  
+
+.grid-middle {  
+    background-color: #ccffff;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+}
+.Travel { 
+  grid-area: 4 / 1 / 5 / 3; 
+}
+.travel-text {
+  display: flex;
+  font-family: "Arial";
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+  align-items: center;
+  place-content: left;
+  color: black;
+  margin: 8px;
+}
+.about { 
+  grid-area: 1 / 1 / 4 / 2; 
+}
+.about-text {
+  display: flex;
+  font-family: "Arial";
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+  align-items: center;
+  place-content: left;
+  color: black;
+  margin: 8px;
+}
+.why { 
+  grid-area: 1 / 2 / 4 / 3; 
+}
+.bousole { 
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "bousole-img blank"
+    "bousole-img bousole-text"; 
+}
+.bousole-img { 
+  grid-area: bousole-img; 
+}
+.blank {
+  grid-area: blank;
+}
+.bousole-text { 
+  grid-area: bousole-text; 
+  display: flex;
+  font-family: "Arial";
+  font-size: 10px;
+  font-weight: normal;
+  text-align: left;
+  align-items: center;
+  place-content: left;
+  color: black;
+  margin: 8px;
+} 
+
+.map { 
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "map-img map-text"; 
+}
+.map-img { 
+  grid-area: map-img; 
+}
+.map-text { 
+  grid-area: map-text; 
+  display: flex;
+  font-family: "Arial";
+  font-size: 10px;
+  font-weight: normal;
+  text-align: left;
+  align-items: center;
+  place-content: left;
+  color: black;
+  margin: 8px;
+}
+
+.velo { 
+  grid-area: 3 / 2 / 4 / 3; 
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "velo-img velo-text"; 
+}
+.velo-img { 
+  grid-area: velo-img; 
+}
+.velo-text { 
+  grid-area: velo-text; 
+  display: flex;
+  font-family: "Arial";
+  font-size: 10px;
+  font-weight: normal;
+  text-align: left;
+  align-items: center;
+  place-content: left;
+  color: black;
+  margin: 8px;
+}
+    
+.subscribe {
+  color: #FFF;
+  background: #569E3D linear-gradient(#79D858, #569E3D);
+}
+
+    .footer-grid {  display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-auto-columns: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+    }
+    
+    .home { 
+      grid-area: 1 / 1 / 4 / 2; 
+    }
+    
+    .book { 
+      grid-area: 1 / 2 / 4 / 3; 
+    }
+    
+    .destination { 
+      grid-area: 1 / 3 / 4 / 4; 
+    }
+    
+    .price { 
+      grid-area: 1 / 4 / 4 / 5; 
+    }
+    
+    .alert { 
+      grid-area: 1 / 5 / 4 / 6; 
+    }
+    
+    .contact { 
+      grid-area: 1 / 6 / 4 / 7; 
+    }
+    
+    .copyright { 
+      grid-area: 3 / 1 / 4 / 7; 
+      font-family: "Arial";
+      font-size: 15px;
+      font-weight: normal;
+      text-align: left;
+      align-items: center;
+      place-content: left;
+      color: grey; 
+      margin: 8px;
+    }
+    
+
+
+
+footer {
+    background-color: #9a99ff;   /* couleur violette*/
+    width: 100%;
+    height: 100%;
+}
